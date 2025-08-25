@@ -1,0 +1,14 @@
+name: modS.v1
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - ipython
+  - ipykernel
+  - notebook
+  - jupyterlab
+  - matplotlib
+  - pandas
+  - numpy
+  - debugpy
+  - pytest
