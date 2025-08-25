@@ -1,0 +1,57 @@
+[project]
+name = "mods_v2"
+version = "0.2.0"
+description = "Trading strategy backtesting with enhanced structure and dependencies"
+authors = [
+    { name = "Avijit Sarkar", email = "avisofficeone@gmail.com" }
+]
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.12"
+
+dependencies = [
+    "pandas>=2.2,<3.0",
+    "numpy>=1.26,<2.0",
+    "matplotlib>=3.9,<4.0",
+    "backtesting>=0.3.3",
+    "pytest>=8.0",
+    "debugpy>=1.8",
+    "jupyterlab>=4.2,<5.0",
+    "notebook>=7.2",
+    "ipython>=8.25",
+    "ipykernel>=6.29",
+    "TA-Lib>=0.4.28"
+]
+
+[project.optional-dependencies]
+dev = [
+    "black>=24.0",
+    "flake8>=7.0",
+    "mypy>=1.10",
+    "isort>=5.13",
+    "pre-commit>=3.7"
+]
+docs = [
+    "sphinx>=7.0",
+    "furo>=2024.1",
+    "myst-parser>=3.0"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 88
+target-version = ["py312"]
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "-ra -q"
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+exclude = ["tests*", "notebooks*", "scripts*"]

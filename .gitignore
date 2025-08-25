@@ -13,7 +13,7 @@ __pycache__/
 *.mamba
 *.lock
 .micromamba/
-
+*.egg-info/
 # VSCode settings
 .vscode/
 *.code-workspace

@@ -1,14 +1,20 @@
-name: modS.v1
+name: mods_v2
 channels:
   - conda-forge
+  - defaults
+
 dependencies:
   - python=3.12
-  - ipython
-  - ipykernel
-  - notebook
+  - ta-lib
   - jupyterlab
-  - matplotlib
-  - pandas
-  - numpy
-  - debugpy
-  - pytest
+  - notebook
+  - black
+  - flake8
+  - mypy
+  - isort
+  - pre-commit
+  - pip
+  - setuptools
+  - wheel
+  - pip:
+      - -e .   # install mods_v2 in editable mode from pyproject.toml
