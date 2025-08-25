@@ -1,0 +1,41 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environment (Micromamba, Conda, venv, etc.)
+.env/
+.venv/
+.envrc
+*.conda
+*.mamba
+*.lock
+.micromamba/
+
+# VSCode settings
+.vscode/
+*.code-workspace
+
+# Jupyter
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# Logs and debug
+*.log
+debug.log
+*.coverage
+coverage.xml
+
+# Testing / cache
+.pytest_cache/
+.coverage
+.cache/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Env exports
+environment.lock.yml
